@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+			<link rel="stylesheet" type="text/css" href="css/Style.css">
+
+			<script type="text/javascript" src="js/jquery.js"></script>
+
+			<style type="text/css">
+			
+			</style>
+
+	</head>
+	<body>
+		<div class="formstyle">
+				<div id="laskin">
+					<form name="forms">
+						 <label for="answer">Luku:</label>
+						<input type="text" name="answer"> </br>
+						<label for="tulos">Tulos:</label>
+						<input class="tulos" type="text" name="tulos"></br>
+						<br>
+						<button class="nappi c1 clear">C1</button>
+						<button class="nappi c2 clear">C2</button>
+						<button class="nappi c1jac2 clear">C1&C2</button>
+						<input class="nappi jako clear" type="button" value=" / " onclick="forms.answer.value += '/' ">
+						</br>
+						
+						<input class="nappi n7" type="button" value=" 7 " onclick="forms.answer.value += '7' ">
+						<input class="nappi n8" type="button" value=" 8 " onclick="forms.answer.value += '8' ">
+						<input class="nappi n9" type="button" value=" 9 " onclick="forms.answer.value += '9' ">
+						<input class="nappi kerto clear" type="button" value=" x " onclick="forms.answer.value += '*' ">
+						</br>
+		 
+						<input class="nappi n4" type="button" value=" 4 " onclick="forms.answer.value += '4' ">
+						<input class="nappi n5" type="button" value=" 5 " onclick="forms.answer.value += '5' ">
+						<input class="nappi n6" type="button" value=" 6 " onclick="forms.answer.value += '6' ">
+						<input class="nappi miinus clear" type="button" value=" - " onclick="forms.answer.value += '-' ">
+						</br>
+		 
+						
+						<input class="nappi n1" type="button" value=" 1 " onclick="forms.answer.value += '1' ">
+						<input class="nappi n2" type="button" value=" 2 " onclick="forms.answer.value += '2' ">
+						<input class="nappi n3" type="button" value=" 3 " onclick="forms.answer.value += '3' ">
+						<input class="nappi plus clear" type="button" value=" + " onclick="forms.answer.value += '+' ">
+						</br>
+		 
+						<input class="nappi n0" type="button" value=" 0 " onclick="forms.answer.value += '0' ">
+						<input class="nappi pilkku clear" type="button" value=" , " onclick="forms.answer.value += '.' ">
+						<input class="nappi tulo clear" type="button" value=" = " onclick="forms.tulos.value = eval (forms.answer.value) ">
+						<br></br>
+		 
+					</form>
+		 
+				</div>
+	</body>
+	<script>
+	
+	</script>
+</html>

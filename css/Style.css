@@ -1,0 +1,72 @@
+/*css ohjeita*/
+#nappi{}/*otettiin kiinni <div id="nappi">        </div>*/
+.nappi{}/*otetaan kiinni <div class="nappi">       </div>*/
+#nappi a{}/* otettiin kiinni <div id="nappi">         <a></a>              </div>*/
+.nappi a{}/* otettiin kiinni <div class="nappi">         <a></a>              </div>*/
+#napinmaarite a{}/* otettiin kiinni <div id="nappi" class="napinmaarite">         <a></a>              </div>*/
+.n1,n2{}/*otettiin kiinni <div class="n1"></div>         <div class="n2"></div>*/
+.maarite1.maarite2.m3{}/*otettiin kiinni <div class="maarite1 maarite2 m3"></div>*/
+
+body{
+    color:red;
+}
+div#laskin{
+    max-width: 425px;
+    margin: auto;
+    background: #000000;
+}
+label {
+    color: #ffff;
+}
+
+.nappi {
+    background:#333333;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 0px;
+    color: #ffff;
+    font-size: 40px;
+    transition: all 0.2s linear;
+}
+.nappi:hover{
+    opacity: 0.7;
+}
+.c1jac2 {
+    font-size: 22px;
+    position: relative;
+    top: -7px;
+}
+.c1, .c2, .c1jac2 {
+    background: #a6a6a6;
+}
+.c1:hover, .c2:hover, .c1jac2:hover {
+    background:#e2dede 
+}
+.jako, .miinus, .plus, .tulo {
+    background: #ff9500;
+    transition: all 0.2s linear;
+}
+.jako:hover, .miinus:hover, .plus:hover, .tulo:hover {
+    background: #ffd400
+}
+button.kerto {
+    background: #ffd300;
+}
+button.kerto:hover {
+    background: #c5a00d
+}
+.n0 {
+    width: 200px;
+    height: 100px;
+    border-radius: 60px;
+    padding: 0px 104px 0px 0px;
+}
+input.numerolooda.active{
+    background: #dedede;
+}
+input.numerolooda.error{
+    background: red;
+}
+
+

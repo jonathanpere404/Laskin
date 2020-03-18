@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+
+        <style type="text/css">
+        	.block-1{
+        		background: rgb(255, 0, 43);
+        	}
+        	.block-2{
+        		background: rgb(68, 0, 255);
+        	}
+        	.block-3{
+        		background: rgb(0, 255, 213);
+        	}
+        	.block-4{
+        		background: rgb(51, 255, 0);
+        	}
+        	.block-5{
+        		background: rgb(255, 230, 0);
+        	}
+        	.block-6{
+        		background: rgb(162, 0, 255);
+        	}
+            .nappi {
+                transition: opacity 0.5 linear , color 0.5s linear;
+                -webkit-transition: all 0.5s linear;
+                cursor: hand;
+                cursor: pointer;
+            }
+            .nappi:hover {
+                color:rgb(9, 255, 0);
+            }
+            .klikattu{
+                background: #000;
+                color: #FFF;
+                opacity: 0.9;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+                <div class="row">
+                    <div class="nappi col-xs-12 col-sm-4 col-lg-6 block-1">
+                    1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    </div>
+                    <div class="nappi col-xs-12 col-sm -4 col-lg-12 block-2">
+                    2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    </div>
+                    <div class="nappi col-xs-12 col-sm-4 col-lg-12 block-3">
+                    3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" nappi col-12 block-4">
+                        4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="nappi col-6 block-5">
+                        5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    </div>
+                    <div class="nappi col-6 block-6">
+                        6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    </div>
+                </div>
+
+        </div>
+    </body>
+    <script>
+        $(function(){
+            console.log( "ready!" );
+
+            $(".nappi").click(function(){
+                if( $(this).hasClass("klikattu")){
+                    $(this).addClass("klikattu");
+
+                }else{
+                    $(this).addClass("klikattu");
+
+                    /*$(this).css({
+                        "backround":"red",
+                        "color":"black",
+                        "opacity":0.4
+                    }); */
+                }
+            });
+            
+        
+        });
+    </script>
+</html>
